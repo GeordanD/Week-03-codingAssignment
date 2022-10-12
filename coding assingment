@@ -39,14 +39,13 @@ nameLengths = [5, 3, 4] //create this new array
 
 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
-
-
-
-
-
-
-
 12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+
+
+
+
+
 
 
 
