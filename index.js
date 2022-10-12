@@ -81,53 +81,29 @@ function averageApp(){  // Function that adds all values in the array then retur
 } console.log(averageApp());
 
 
+let letters = [5, 4, 7, 7, 4, 445];
+let lettersSum = 0;
+let notes = [6, 6, 8, 3, 6, 70000];
+let notesSum = 0;
+let lettersAverage = 0;
+let notesAverage = 0;
 
+function averageArray(array1, array2){   // Function that takes in two arrays and finds the average of them and finds weather array1 is greater then array2. (11.)
+    let sumWithInitial = letters.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        lettersSum
+    ); array1 = sumWithInitial / letters.length;
+    let notesWithInitial = notes.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        notesSum
+    ); array2 = notesWithInitial / notes.length;
 
-
-
-
-
-function averageArray(array1, array2){
-   
-   
-   
-   
     if (array1 < array2){
         return true;
     } else{
         return !true;
     }
-}console.log(averageArray(averageArray, averageArray))
+}console.log(averageArray(lettersAverage, notesAverage));
 
 */
-let letters = [5, 4, 7, 7, 4, 445];
-let lettersSum = 0;
-let sumWithInitial = letters.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    lettersSum
-); console.log(sumWithInitial);
 
-
-
-
-
-
-/*
-
-
-let notes = [6, 6, 8, 3, 6, 7];
-let notesSum = 0;
-let notesAvg = notes.length;
-
-
-
-
-
-
-
-
-
-for(let i = 0; i < letters.length; i++);
-    lettersSum = lettersSum + letters[i];
-    return lettersSum / lettersAvg;
-    (let i = 0; i < notes.length; i++);*/
