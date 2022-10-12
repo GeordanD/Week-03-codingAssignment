@@ -80,44 +80,52 @@ function averageApp(){  // Function that adds all values in the array then retur
     
 } console.log(averageApp());
 //////////////////////////////
-
+*/
 let letters = [5, 4, 7, 7, 4, 445];
 let lettersSum = 0;
-let notes = [6, 6, 8, 3, 6, 70000];
+let notes = [6, 6, 8, 3, 6, 70];
 let notesSum = 0;
 let lettersAverage = 0;
 let notesAverage = 0;
 
 function averageArray(array1, array2){   // Function that takes in two arrays and finds the average of them and finds weather array1 is greater then array2. (11.)
-    let sumWithInitial = letters.reduce(
-        (previousValue, currentValue) => previousValue + currentValue,
+    let sumWithInitial = array1.reduce(
+        (previousValue, currentValue) => {
+            return previousValue + currentValue;
+        },
         lettersSum
-    ); array1 = sumWithInitial / letters.length;
-    let notesWithInitial = notes.reduce(
-        (previousValue, currentValue) => previousValue + currentValue,
+    ); array1 = sumWithInitial / array1.length;
+    let notesWithInitial = array2.reduce(
+        (previousValue, currentValue) => {
+            return previousValue + currentValue;
+        },
         notesSum
-    ); array2 = notesWithInitial / notes.length;
+    ); array2 = notesWithInitial / array2.length;
 
     if (array1 < array2){
         return true;
     } else{
         return !true;
     }
-}console.log(averageArray(lettersAverage, notesAverage));
+}console.log(averageArray(letters, notes));
 /////////////////////////////
+/*
+let isHotOutside = true;
+let isColdOutside = false;
+let moneyInPocket = 10.50;
 function willBuyDrink(isHotOutside, moneyInPocket){  // function will return true if its hotoutside  & money in pocket is equal too or greater then set ammout it returns true. (12.) 
     if(isHotOutside === true && moneyInPocket >= 10.50){
         return true;
     } else{
         return !true;
     }
-}console.log(willBuyDrink(true, 10.50));  
-////////////////////////////*/
+}console.log(willBuyDrink(isHotOutside, moneyInPocket));  
+///////////////////////////
+
 let thisWeeksTemps = [64, 52, 56, 54, 55, 44, 46];
 let nextWeeksTemps = [65, 43, 55, 66, 77, 80, 73];
 let testWeeksTemps = ["sour", "apples", "are", "gross"];
 let tempSum = 0;
-let tempAv= 0;
 function averageWeeksTemp(array){  // This function lets you enter an array of temps into it and tell you what the average temp is outside for this week. (13.)
     let averageTemp = array.reduce(  // I made this function to be able to easily tell the average temp of the coming weeks.
         (previousValue, currentValue) => {
@@ -132,5 +140,5 @@ function averageWeeksTemp(array){  // This function lets you enter an array of t
     }
 }
 
-console.log("This weeks average tempeture is " + averageWeeksTemp(testWeeksTemps));
-
+console.log("This weeks average tempeture is " + averageWeeksTemp(nextWeeksTemps));
+*/
