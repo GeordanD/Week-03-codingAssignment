@@ -1,4 +1,4 @@
-/*
+
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];//   (1.)
 ages.push(30,);//adds new number to end of the array dynamicly changes subtraction   (1b.)
 let lastIndex = ages[ages.length - 1]; //finds the last index in the array and sets it into variable.  (1a.)
@@ -51,7 +51,7 @@ function wordMultiplyer(word, n) {  //function takes in 2 parameters and spits o
    return repeat;
 } 
 
-console.log(wordMultiplyer("Hello World", 3));
+console.log(wordMultiplyer("HelloWorld", 3));
 ////////////////////////////////
 function wholeName(firstname, lastname){ // Function that takes in two parameters and returns a full name (8.)
     return firstname + " " + lastname;
@@ -80,7 +80,6 @@ function averageApp(){  // Function that adds all values in the array then retur
     
 } console.log(averageApp());
 //////////////////////////////
-*/
 let letters = [5, 4, 7, 7, 4, 445];
 let lettersSum = 0;
 let notes = [6, 6, 8, 3, 6, 70];
@@ -109,7 +108,6 @@ function averageArray(array1, array2){   // Function that takes in two arrays an
     }
 }console.log(averageArray(letters, notes));
 /////////////////////////////
-/*
 let isHotOutside = true;
 let isColdOutside = false;
 let moneyInPocket = 10.50;
@@ -121,7 +119,6 @@ function willBuyDrink(isHotOutside, moneyInPocket){  // function will return tru
     }
 }console.log(willBuyDrink(isHotOutside, moneyInPocket));  
 ///////////////////////////
-
 let thisWeeksTemps = [64, 52, 56, 54, 55, 44, 46];
 let nextWeeksTemps = [65, 43, 55, 66, 77, 80, 73];
 let testWeeksTemps = ["sour", "apples", "are", "gross"];
@@ -141,4 +138,3 @@ function averageWeeksTemp(array){  // This function lets you enter an array of t
 }
 
 console.log("This weeks average tempeture is " + averageWeeksTemp(nextWeeksTemps));
-*/
