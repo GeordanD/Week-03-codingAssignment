@@ -6,7 +6,7 @@
 // 1c.	Use a loop to iterate through the array and calculate the average age. 
 //////////////////////////////////////////////////////////////////////////////////////////////
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];//   (1.)
-ages.push(30,);//adds new number to end of the array dynamicly changes subtraction   (1b.)
+ages.push(30,);//adds new number to end of the array dynamically changes subtraction   (1b.)
 let lastIndex = ages[ages.length - 1]; //finds the last index in the array and sets it into variable.  (1a.)
 let firstIndex = ages[0];// sets first index in a variable.   (1a.)
 let subIndex = lastIndex - firstIndex;// subtracts last index in array from first index in array.   (1a.)
@@ -68,14 +68,14 @@ console.log(nameSumNames);// this is used to test my code.
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
 ////////////////////////////////////////////////////////////////////////////////////////////////
-function wordMultiplyer(word, n) {  //function takes in 2 parameters and spits out first one as a string and second one determines how manny it returns. (7.)
+function wordMultiplier(word, n) {  //function takes in 2 parameters and spits out first one as a string and second one determines how many it returns. (7.)
     let repeat = "";
     for(let i = 0; i < n; i++)
     repeat += word;
    return repeat;
 } 
 
-console.log(wordMultiplyer("HelloWorld", 3)); // this is used to test my code. Function you can enter any string and any number and it will write the string that manny times.
+console.log(wordMultiplier("HelloWorld", 3)); // this is used to test my code. Function you can enter any string and any number and it will write the string that many times.
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // 8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
 // •	The full name should be the first and the last name separated by a space.
@@ -146,7 +146,7 @@ function averageArray(array1, array2){   // Function that takes in two arrays an
 let isHotOutside = true;
 let isColdOutside = false;
 let moneyInPocket = 10.50;
-function willBuyDrink(isHotOutside, moneyInPocket){  // function will return true if its hotoutside  & money in pocket is equal too or greater then set ammout it returns true. (12.) 
+function willBuyDrink(isHotOutside, moneyInPocket){  // function will return true if its hot outside  & money in pocket is equal too or greater then set amount it returns true. (12.) 
     if(isHotOutside === true && moneyInPocket >= 10.50){
         return true;
     } else{
@@ -174,6 +174,6 @@ function averageWeeksTemp(array){  // This function lets you enter an array of t
         return ("beautiful!"); // this is here for when something thats not numbers is entered into the function this runs.
     }
 }
-                                                  //// add three different arrays provided up above
-console.log("This weeks average tempeture is " + averageWeeksTemp(thisWeeksTemps)); // this is used to test my code. there are 3 arrays above to be used to test with this function. 
+                                                  // add three different arrays provided up above
+console.log("This weeks average temperature is " + averageWeeksTemp(thisWeeksTemps)); // this is used to test my code. there are 3 arrays above to be used to test with this function. 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
