@@ -175,5 +175,5 @@ function averageWeeksTemp(array){  // This function lets you enter an array of t
     }
 }
                                                   // add three different arrays provided up above
-console.log("This weeks average temperature is " + averageWeeksTemp(thisWeeksTemps)); // this is used to test my code. there are 3 arrays above to be used to test with this function. 
+console.log("This weeks average temperature is " + averageWeeksTemp(testWeeksTemps)); // this is used to test my code. there are 3 arrays above to be used to test with this function. 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
